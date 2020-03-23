@@ -81,6 +81,7 @@ attr_accessor :game
         end
         if board.valid_move?(@plays[count]) == true
           board.update(@plays[count], self)
+          return @plays[count]
         end
       end
 
