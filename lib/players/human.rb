@@ -74,6 +74,7 @@ attr_accessor :game
         index = find_win.key(" ").to_s
         win = index.to_i + 1
         board.update(win, self)
+        return win
       else
         count = 0
         until board.valid_move?(@plays[count]) == true
